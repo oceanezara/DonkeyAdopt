@@ -1,0 +1,14 @@
+<h2>My Donkeys</h2>
+<div class="container">
+  <div class="row">
+    <div class="card col-sm" style="width: 18rem" *ngFor="let list of lists">
+      <img src="{{ list.photo }}" class="rounded mx-auto d-block" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ list.name }}</h5>
+        <p class="card-text">Originaire de : {{ list.origin }}</p>
+        <p class="card-text">Date de naisssance : {{ list.dateOfBirth }}</p>
+        <a href="#" class="btn btn-primary">Adopt me !</a>
+      </div>
+    </div>
+  </div>
+</div>
